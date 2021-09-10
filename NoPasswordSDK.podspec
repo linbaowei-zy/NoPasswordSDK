@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NoPasswordSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "zhongzhaijinke"
   spec.description  = <<-DESC 
   		中债金科安全组件SDK
@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   # spec.libraries = "iconv", "xml2"
 
   spec.requires_arc = true
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64 armv7s'}#支持架构配置
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64 armv7s',"OTHER_LDFLAGS" => "-ObjC"}#支持架构配置
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
