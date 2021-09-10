@@ -17,7 +17,11 @@ typedef enum CoreLockType{
 @property (nonatomic,assign) NSInteger coreLockMinItemCount;
 /** 内圆大小比例 */
 @property (nonatomic,assign) CGFloat coreLockArcWHR;
-/**外圆背景颜色*/
+/** 连线宽度 */
+@property (nonatomic,assign) CGFloat coreLockArcLineW;
+/**外圆默认背景颜色*/
+@property (nonatomic,strong) UIColor *coreLockViewNormalBgColor;
+/**外圆选中背景颜色*/
 @property (nonatomic,strong) UIColor *coreLockViewBgColor;
 /**线条选中颜色：默认*/
 @property (nonatomic,strong) UIColor *coreLockCircleLineSelectedColor;

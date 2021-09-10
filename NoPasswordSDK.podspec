@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NoPasswordSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "zhongzhaijinke"
   spec.description  = <<-DESC 
   		中债金科安全组件SDK
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/linbaowei-zy/NoPasswordSDK.git", :tag => "#{spec.version}" }
 
-  spec.ios.vendored_frameworks = 'Framework/NoPasswordSDK.framework'#SDK相对本文件路径
+  spec.ios.vendored_frameworks = 'NoPasswordSDK.framework'#SDK相对本文件路径
   spec.frameworks = "UIKit", "Foundation"
  
   # spec.library   = "iconv"
